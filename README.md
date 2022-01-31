@@ -4,10 +4,16 @@ Configure Postfix to use Gmail as a Mail Relay
 # Install Required Software
 ```yum update && yum install postfix mailx cyrus-sasl cyrus-sasl-plain```
 
-# Postfix configuration files reside in the directory /etc/postfix. Create or edit the password file:
+# Postfix configuration 
+
+files reside in the directory /etc/postfix. 
+
+Create or edit the password file:
+
 ``` vim nano /etc/postfix/sasl_passwd ```
 
 # Add the line:
+
 ``` [smtp.gmail.com]:587    username@gmail.com:password ```
 
 # Save and close the file. Your Gmail password is stored as plaintext, so make the file accessible only by root:
@@ -15,6 +21,7 @@ Configure Postfix to use Gmail as a Mail Relay
 ``` chmod 600 /etc/postfix/sasl_passwd ```
 
 # Configure Postfix
+
 Edit the main Postfix configuration file:
 
 ```
