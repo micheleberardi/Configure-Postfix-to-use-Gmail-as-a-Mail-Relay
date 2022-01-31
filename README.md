@@ -23,12 +23,10 @@ Your Gmail password is stored as plaintext, so make the file accessible only by 
 ``` chmod 600 /etc/postfix/sasl_passwd ```
 
 # Configure Postfix
-
 Edit the main Postfix configuration file:
 
 ```
 vim /etc/postfix/main.cf
-
 ```
 
 # Add or modify the following values:
@@ -70,15 +68,15 @@ Save and close the file.
 
 ```
 postmap /etc/postfix/sasl_passwd
+````
 
-# Restart Postfix
+#  Restart Postfix
 
 ```
 systemctl restart postfix.service
 
 ```
-
-# Send a test email
+#  Send a test email
 
 ```
 echo "Test mail from postfix" | mail -s "Test Postfix" name@domain.com
