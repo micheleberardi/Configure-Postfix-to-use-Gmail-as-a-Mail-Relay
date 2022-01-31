@@ -16,7 +16,9 @@ Create or edit the password file:
 
 ``` [smtp.gmail.com]:587    username@gmail.com:password ```
 
-# Save and close the file. Your Gmail password is stored as plaintext, so make the file accessible only by root:
+Save and close the file. 
+
+Your Gmail password is stored as plaintext, so make the file accessible only by root:
 
 ``` chmod 600 /etc/postfix/sasl_passwd ```
 
