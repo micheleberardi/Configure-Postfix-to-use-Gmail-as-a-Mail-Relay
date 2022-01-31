@@ -54,9 +54,6 @@ smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
 # eliminates default security options which are imcompatible with gmail
 smtp_sasl_security_options =
 
-#debug_peer_list=smtp.gmail.com
-#debug_peer_level=3
-
 smtp_use_tls=yes
 
 smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
