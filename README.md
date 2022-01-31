@@ -10,7 +10,7 @@ files reside in the directory /etc/postfix.
 
 Create or edit the password file:
 
-``` vim nano /etc/postfix/sasl_passwd ```
+``` vim /etc/postfix/sasl_passwd ```
 
 # Add the line:
 
@@ -82,4 +82,4 @@ systemctl restart postfix.service
 echo "Test mail from postfix" | mail -s "Test Postfix" name@domain.com
 ```
 
-# DONE
+# Done
